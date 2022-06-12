@@ -1,0 +1,56 @@
+.tasks{
+    display: flex;
+    padding: 1rem;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: clamp(300px,85%,800px);
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px #222;
+    background-color: rgb(104, 104, 104);
+}
+
+#title{
+    font-size: 25px;
+    height: 33px;
+}
+#description{
+    font-size: 18px;
+    height: clamp(16px,100%);
+}
+#date{
+    color: #eee;
+    height: clamp(18px,100%);
+    text-shadow: 1px 1px 3px #222;
+}
+
+.buttons{
+    display: flex;
+    max-height: 85px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px #222;
+}
+
+#check:hover{
+    transform: scale(1.2);
+    background-color: #0F0;
+}
+
+#trash:hover{
+    transform: scale(1.2);
+    background-color: #F00;
+}
+
+.buttons button img{
+    width: 100%;
+}
